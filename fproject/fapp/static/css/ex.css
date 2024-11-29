@@ -1,0 +1,28 @@
+.a{
+    color: cyan;
+}
+
+
+
+.main{
+    background-color: rgb(248, 234, 79);
+    margin-top: 30px;
+    border: 3px solid aqua;
+    height: auto;
+    width: 350px;
+    margin-left: 50px;
+    padding: 50px;
+}
+
+#bu{
+    color: rgb(6, 6, 6);
+    width: 90px;
+    margin-left: 40px;
+    background-color: rgb(149, 211, 231);
+    
+}
+
+#SecondName,#FirstName{
+    background-color: rgb(156, 241, 247);
+
+}

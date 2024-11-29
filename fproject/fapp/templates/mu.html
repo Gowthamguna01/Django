@@ -1,0 +1,37 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="{% static 'css/ex.css'%}">
+    <link rel="stylesheet" href="{%static 'css1/bootstrap.min.css' %}">
+    <script src="{% static 'bootstrap.min.js' %}"></script>
+</head>
+<body>
+   
+    
+    <form action="bio" autocomplete="off" class="main">
+        
+        {% csrf token %}
+        <label for="First Name">First Name:</label>
+        <input id="FirstName" type="text" name="first name" placeholder="first name"><br><br>
+
+        <label for="Second Name">Second Name:</label>
+        <input id="SecondName" type="text" name="second name" placeholder="Second Name"><br><br>
+
+        <label for="PHONE">Number:</label>
+        <input id="number" type="number" name="number" placeholder="Phone number"><br><br>
+
+        <label for="user name">User Name</label>
+        <input type="text" id="user name" name="username" placeholder="User Name"><br><br>
+
+        <label for="Password">Password</label>
+        <input type="password" name="password" id="password" placeholder="password"><br><br>
+        
+        <input type="submit" value="OK" id="bu">
+    </form>
+
+</body>
+</html>
