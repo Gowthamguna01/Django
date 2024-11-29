@@ -1,0 +1,74 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <link rel="stylesheet" href="{%static 'css/ex.css' %}">
+    <link rel="stylesheet" href="{%static 'css1/bootstrap.min.css' %}">
+    <script src="{% static 'bootstrap.min.js' %}"></script>
+    <style>
+        table,tr,th,td{
+            border: 5px solid rgb(129, 127, 127);
+            border-collapse: collapse;
+            height: 60px;
+            width: 480px;
+            text-align: center;
+        }
+
+        table{
+            margin-left: 590px;
+            position: relative;
+            bottom: 500px;
+            background-color: rgb(196, 205, 207);
+        }
+
+        .z{
+            border: 3px hidden red;
+            height: 760px;
+            width: 1490px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="z">
+    <img src="{%static '/images/a1.jpg' %}" alt="register pic" style="height: 100%; width: 100%;">
+    <table>
+        <tr>
+            <th>Bio</th>
+            <th>Details</th>
+        </tr>
+
+        <tr>
+            <td><b>First Name</b></td>
+            <td>{{Firstname}}</td>
+        </tr>
+
+        <tr>
+            <td><b>Last Name</b></td>
+            <td>{{Lastname}}</td>
+        </tr>
+
+        <tr>
+            <td><b>User Name</b></td>
+            <td>{{Username}}</td>
+        </tr>
+
+        <tr>
+            <td><b>Password</b></td>
+            <td>{{Password}}</td>
+        </tr>
+
+        <tr>
+            <td><b>Mobile No</b></td>
+            <td>{{Mobile}}</td>
+        </tr>
+    </table>
+</div>
+
+
+    
+</body>
+</html>
